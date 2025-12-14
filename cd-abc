@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estilos.css"?>
+<cd>
+  <informacion_general>
+    <artista>ABC</artista>
+    <titulo>The Collection</titulo>
+    <sello>KARUSSELL INTERNATIONAL</sello>
+    <referencia>551 831-2</referencia>
+    <anio>1996</anio>
+    <pais>Germany</pais>
+    <formato>CD - Compilation</formato>
+    <genero>Funk / Soul, Electronic</genero>
+    <estilo>Funk Disco, Synth Pop</estilo>
+    <observaciones>Licensed from Mercury Records Ltd (London)</observaciones>
+  </informacion_general>
+
+  <canciones>
+    <cancion numero="01"><titulo>Poison Arrow</titulo><duracion>03:23</duracion></cancion>
+    <cancion numero="02"><titulo>The Look Of Love (Part One)</titulo><duracion>03:29</duracion></cancion>
+    <cancion numero="03"><titulo>The Night You Murdered Love</titulo><duracion>04:53</duracion></cancion>
+    <cancion numero="04"><titulo>Tears Are Not Enough</titulo><duracion>03:29</duracion></cancion>
+    <cancion numero="05"><titulo>Be Near Me</titulo><duracion>03:37</duracion></cancion>
+    <cancion numero="06"><titulo>I'm In Love With You</titulo><duracion>04:36</duracion></cancion>
+    <cancion numero="07"><titulo>The Real Thing</titulo><duracion>04:51</duracion></cancion>
+    <cancion numero="08"><titulo>Love's A Dangerous Language</titulo><duracion>03:04</duracion></cancion>
+    <cancion numero="09"><titulo>The Greatest Love Of All</titulo><duracion>05:34</duracion></cancion>
+    <cancion numero="10"><titulo>When Smokey Sings</titulo><duracion>04:06</duracion></cancion>
+    <cancion numero="11"><titulo>One Better World</titulo><duracion>05:38</duracion></cancion>
+    <cancion numero="12"><titulo>Vanity Kills</titulo><duracion>03:32</duracion></cancion>
+    <cancion numero="13"><titulo>Bite The Hand</titulo><duracion>03:07</duracion></cancion>
+    <cancion numero="14"><titulo>Chicago (Abridged)</titulo><duracion>04:03</duracion></cancion>
+    <cancion numero="15"><titulo>Minneapolis</titulo><duracion>03:01</duracion></cancion>
+    <cancion numero="16"><titulo>Never Again</titulo><duracion>03:03</duracion></cancion>
+    <cancion numero="17"><titulo>The Night You Murdered Love (Abridged)</titulo><duracion>06:04</duracion></cancion>
+    <cancion numero="18"><titulo>All Of My Heart</titulo><duracion>04:48</duracion></cancion>
+  </canciones>
+</cd>
+cd {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #111 0%, #222 60%, #333 100%);
+  color: #f4f4f4;
+  padding: 24px;
+  border: 4px solid #000;
+  border-radius: 8px;
+  width: 720px;
+  margin: 24px auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+informacion_general {
+  display: block;
+  padding: 16px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+informacion_general > artista,
+informacion_general > titulo {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+informacion_general > artista { font-size: 22px; color: #ffcc66; }
+informacion_general > titulo  { font-size: 28px; color: #66d1ff; margin-top: 2px; }
+
+informacion_general > sello,
+informacion_general > referencia,
+informacion_general > anio,
+informacion_general > pais,
+informacion_general > formato,
+informacion_general > genero,
+informacion_general > estilo,
+informacion_general > observaciones {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+canciones {
+  display: block;
+  margin-top: 18px;
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+}
+
+cancion {
+  display: grid;
+  grid-template-columns: 50px 1fr 70px;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+cancion:last-child { border-bottom: none; }
+
+cancion::before {
+  content: attr(numero);
+  background: #ffcc66;
+  color: #111;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+  padding: 4px 0;
+}
+
+titulo {
+  font-style: normal;
+  font-size: 15px;
+  color: #fefefe;
+}
+
+duracion {
+  justify-self: end;
+  font-family: "Consolas", monospace;
+  font-size: 14px;
+  color: #b0e0ff;
+}
+
+
+
+.
